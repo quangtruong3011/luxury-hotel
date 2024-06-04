@@ -11,19 +11,19 @@ const Home = () => {
 
     const rooms = [
         {
-            id: 1,
+            _id: 1,
             imgUrl: 'https://picsum.photos/400/600?random=1',
             title: 'Deluxe Contrast Room',
             price: 200,
         },
         {
-            id: 2,
+            _id: 2,
             imgUrl: 'https://picsum.photos/400/600?random=2',
             title: 'Luxury Twin Room',
             price: 250,
         },
         {
-            id: 3,
+            _id: 3,
             imgUrl: 'https://picsum.photos/400/600?random=3',
             title: 'Single Contrast Room',
             price: 230,

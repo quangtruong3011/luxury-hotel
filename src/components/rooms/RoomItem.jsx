@@ -9,7 +9,7 @@ const RoomItem = ({ room }) => {
             </div>
             <div className="pt-5">
                 <h2 className="text-2xl font-semibold leading-tight mb-4 hover:text-rose-500 transition-all duration-150 ease-in-out">
-                    <Link to='#'>{room.title}</Link>
+                    <Link to={`/room/${room._id}`}>{room.title}</Link>
                 </h2>
                 <div className="flex gap-4 mb-4">
                     <p className="text-gray-500"><span className="font-medium mr-2">Capacity:</span>{room.capacity}</p>
