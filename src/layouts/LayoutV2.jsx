@@ -1,16 +1,16 @@
 import Footer from "../components/Footer";
-import Nav from "../components/nav/Nav";
+import NavV2 from "../components/nav/NavV2";
 import ScrollToTop from "../components/ScrollToTop";
 
-const Layout = ({ children }) => {
+const LayoutV2 = ({ children }) => {
     return (
-        <div className="relative">
-            <Nav />
+        <div>
+            <NavV2 />
             {children}
             <Footer />
             <ScrollToTop />
         </div>
     )
-}
+};
 
-export default Layout;
+export default LayoutV2;
