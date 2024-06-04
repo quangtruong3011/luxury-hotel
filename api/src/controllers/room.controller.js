@@ -59,7 +59,6 @@ const deleteRoom = async (req, res) => {
     });
 };
 
-
 const roomController = {
     createRoom,
     getRooms,

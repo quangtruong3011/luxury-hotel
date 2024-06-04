@@ -22,6 +22,14 @@ const roomSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    imgUrl: {
+        type: String,
+        required: true,
+    },
+    amenities: {
+        type: [String],
+        required: true,
+    },
 });
 
 const Room = mongoose.model("Room", roomSchema);

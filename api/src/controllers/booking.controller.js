@@ -15,7 +15,7 @@ const createBooking = async (req, res) => {
             message: error.message,
         });
     }
-}
+};
 
 const getBookings = async (req, res) => {
     const bookings = await Booking.find();
@@ -24,7 +24,7 @@ const getBookings = async (req, res) => {
         message: "Bookings fetched",
         data: bookings
     });
-}
+};
 
 const getBooking = async (req, res) => {
     const { bookingId } = req.params;
@@ -36,7 +36,7 @@ const getBooking = async (req, res) => {
         data: booking
     });
 
-}
+};
 
 const updateBooking = async (req, res) => {
     const { bookingId } = req.params;
@@ -48,7 +48,7 @@ const updateBooking = async (req, res) => {
         message: "Booking updated",
         data,
     });
-}
+};
 
 const deleteBooking = async (req, res) => {
     const { bookingId } = req.params;
@@ -58,4 +58,14 @@ const deleteBooking = async (req, res) => {
     res.status(200).send({
         message: "Booking deleted",
     });
-}
+};
+
+const bookingController = {
+    createBooking,
+    getBookings,
+    getBooking,
+    updateBooking,
+    deleteBooking,
+};
+
+export default bookingController;
